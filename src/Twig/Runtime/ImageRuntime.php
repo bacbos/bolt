@@ -347,7 +347,7 @@ class ImageRuntime
         }
 
         return isset($fileName['filename']) ? $fileName['filename']
-            : isset($fileName['file']) ? $fileName['file'] : ''
+            : (isset($fileName['file']) ? $fileName['file'] : '')
         ;
     }
 }
